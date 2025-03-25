@@ -1,0 +1,80 @@
+/*
+ * Data structure it's a data organization, management and storage format that
+ * enables efficient access , modification , insertion, deletion and search to
+ * get best performance in time and space
+ * array is a good data structure in access
+ * linked list is a good data structure in insertion and deletion
+ */
+
+/*
+ *                                                Data structure
+ *                                                                  
+ * 1-Primitive data structure                                                             2-Non-Primitive data structure
+ * 
+ * Integer / Float / Character / Pointer                  1-Linear data structure(Linear lists)                   2-Non-linear data structure(Non-linear lists)
+ * 
+ *                                                 1-Static data structure       2-Dynamic data structure                        Graph / Tree
+ * 
+ *                                                           Array               Linked list / Stack / queue                    
+ */
+
+/*                               Time Complexity
+ * best case Omega notation,
+ * average case Theta notation,
+ * worst case Big O notation, O (Order)
+ * 
+ * declaration = Big O (0)
+ * math operations , initializing (assignation),if ,else and if else = constant time => Big O (1)
+ * for loop =n such sum of n and we improve it with the trick math (n*(n+1)/2) to be constant time
+ * for loop that multiply or devide its counter = log n to base the multiplier or divider such (i=1;i<n;i*2) =log n to base 2
+ * for loop that its counter assignation contains multiplication or division = n multiply multiplier or divide by divider such (i=n/3;i<n;i++)=n/3=n
+ * 2 normal nested for loop =n^2
+ * 3 normal nested for loop =n^3 ...etc
+ * normal function =n such fun(n)
+ * function that multiply or devide counter = log n to base the multiplier or divider such fun(n/2)=log n to base 2
+ * fibonacci recursive function =2^n
+ ********************************code*****************************************************
+ * 
+ * import java.util.Scanner;
+ * 
+ * public class App {
+ * public static void main(String[] args) throws Exception {
+ * 
+ * Scanner scanner = new Scanner(System.in);
+ * int n = scanner.nextInt();
+ * int sum = 0;
+ * for (int i = 1; i <= n; i++) {
+ * sum += i;
+ * }
+ * System.out.println(sum);
+ * System.out.println(n * (n + 1) / 2);
+ * System.out.println(fib(6));
+ * fun(100);
+ * 
+ * }
+ * 
+ * static int fib(int n) {
+ * if (n < 2) {
+ * return n;
+ * } else {
+ * return fib(n - 1) + fib(n - 2);
+ * }
+ * }
+ * 
+ * static double fun(double n) {
+ * if (n < 1) {
+ * return n;
+ * } else {
+ * System.out.println(n);
+ * return fun(n / 2);
+ * }
+ * }
+ * }
+ */
+
+/*                               stack
+ * stack: follow last in first out (lifo) way
+ * some of its applications : redo the removed last char of words or deeper windows or tabs in web 
+ * in this tutorial we gonna bulid it as Array-Based implemntation of the ADT Stack in class
+ 
+ */
